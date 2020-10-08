@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE50293C252FB64A00E25F69 /* MELMKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50293B252FB64A00E25F69 /* MELMKApp.swift */; };
+		BE50293E252FB64A00E25F69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50293D252FB64A00E25F69 /* ContentView.swift */; };
+		BE502940252FB64F00E25F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE50293F252FB64F00E25F69 /* Assets.xcassets */; };
+		BE502943252FB64F00E25F69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE502942252FB64F00E25F69 /* Preview Assets.xcassets */; };
+		BE50294E252FB65000E25F69 /* MELMKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50294D252FB65000E25F69 /* MELMKTests.swift */; };
+		BE502959252FB65000E25F69 /* MELMKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE502958252FB65000E25F69 /* MELMKUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE50294A252FB65000E25F69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE502930252FB64A00E25F69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE502937252FB64A00E25F69;
+			remoteInfo = MELMK;
+		};
+		BE502955252FB65000E25F69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE502930252FB64A00E25F69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE502937252FB64A00E25F69;
+			remoteInfo = MELMK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE502938252FB64A00E25F69 /* MELMK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MELMK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE50293B252FB64A00E25F69 /* MELMKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELMKApp.swift; sourceTree = "<group>"; };
+		BE50293D252FB64A00E25F69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE50293F252FB64F00E25F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE502942252FB64F00E25F69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE502944252FB64F00E25F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE502949252FB65000E25F69 /* MELMKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MELMKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE50294D252FB65000E25F69 /* MELMKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELMKTests.swift; sourceTree = "<group>"; };
+		BE50294F252FB65000E25F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE502954252FB65000E25F69 /* MELMKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MELMKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE502958252FB65000E25F69 /* MELMKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELMKUITests.swift; sourceTree = "<group>"; };
+		BE50295A252FB65000E25F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE502935252FB64A00E25F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE502946252FB65000E25F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE502951252FB65000E25F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE50292F252FB64A00E25F69 = {
+			isa = PBXGroup;
+			children = (
+				BE50293A252FB64A00E25F69 /* MELMK */,
+				BE50294C252FB65000E25F69 /* MELMKTests */,
+				BE502957252FB65000E25F69 /* MELMKUITests */,
+				BE502939252FB64A00E25F69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE502939252FB64A00E25F69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE502938252FB64A00E25F69 /* MELMK.app */,
+				BE502949252FB65000E25F69 /* MELMKTests.xctest */,
+				BE502954252FB65000E25F69 /* MELMKUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE50293A252FB64A00E25F69 /* MELMK */ = {
+			isa = PBXGroup;
+			children = (
+				BE50293B252FB64A00E25F69 /* MELMKApp.swift */,
+				BE50293D252FB64A00E25F69 /* ContentView.swift */,
+				BE50293F252FB64F00E25F69 /* Assets.xcassets */,
+				BE502944252FB64F00E25F69 /* Info.plist */,
+				BE502941252FB64F00E25F69 /* Preview Content */,
+			);
+			path = MELMK;
+			sourceTree = "<group>";
+		};
+		BE502941252FB64F00E25F69 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BE502942252FB64F00E25F69 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE50294C252FB65000E25F69 /* MELMKTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE50294D252FB65000E25F69 /* MELMKTests.swift */,
+				BE50294F252FB65000E25F69 /* Info.plist */,
+			);
+			path = MELMKTests;
+			sourceTree = "<group>";
+		};
+		BE502957252FB65000E25F69 /* MELMKUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE502958252FB65000E25F69 /* MELMKUITests.swift */,
+				BE50295A252FB65000E25F69 /* Info.plist */,
+			);
+			path = MELMKUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE502937252FB64A00E25F69 /* MELMK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE50295D252FB65000E25F69 /* Build configuration list for PBXNativeTarget "MELMK" */;
+			buildPhases = (
+				BE502934252FB64A00E25F69 /* Sources */,
+				BE502935252FB64A00E25F69 /* Frameworks */,
+				BE502936252FB64A00E25F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MELMK;
+			productName = MELMK;
+			productReference = BE502938252FB64A00E25F69 /* MELMK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE502948252FB65000E25F69 /* MELMKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE502960252FB65000E25F69 /* Build configuration list for PBXNativeTarget "MELMKTests" */;
+			buildPhases = (
+				BE502945252FB65000E25F69 /* Sources */,
+				BE502946252FB65000E25F69 /* Frameworks */,
+				BE502947252FB65000E25F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE50294B252FB65000E25F69 /* PBXTargetDependency */,
+			);
+			name = MELMKTests;
+			productName = MELMKTests;
+			productReference = BE502949252FB65000E25F69 /* MELMKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE502953252FB65000E25F69 /* MELMKUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE502963252FB65000E25F69 /* Build configuration list for PBXNativeTarget "MELMKUITests" */;
+			buildPhases = (
+				BE502950252FB65000E25F69 /* Sources */,
+				BE502951252FB65000E25F69 /* Frameworks */,
+				BE502952252FB65000E25F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE502956252FB65000E25F69 /* PBXTargetDependency */,
+			);
+			name = MELMKUITests;
+			productName = MELMKUITests;
+			productReference = BE502954252FB65000E25F69 /* MELMKUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE502930252FB64A00E25F69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					BE502937252FB64A00E25F69 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					BE502948252FB65000E25F69 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = BE502937252FB64A00E25F69;
+					};
+					BE502953252FB65000E25F69 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = BE502937252FB64A00E25F69;
+					};
+				};
+			};
+			buildConfigurationList = BE502933252FB64A00E25F69 /* Build configuration list for PBXProject "MELMK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE50292F252FB64A00E25F69;
+			productRefGroup = BE502939252FB64A00E25F69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE502937252FB64A00E25F69 /* MELMK */,
+				BE502948252FB65000E25F69 /* MELMKTests */,
+				BE502953252FB65000E25F69 /* MELMKUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE502936252FB64A00E25F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE502943252FB64F00E25F69 /* Preview Assets.xcassets in Resources */,
+				BE502940252FB64F00E25F69 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE502947252FB65000E25F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE502952252FB65000E25F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE502934252FB64A00E25F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE50293E252FB64A00E25F69 /* ContentView.swift in Sources */,
+				BE50293C252FB64A00E25F69 /* MELMKApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE502945252FB65000E25F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE50294E252FB65000E25F69 /* MELMKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE502950252FB65000E25F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE502959252FB65000E25F69 /* MELMKUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE50294B252FB65000E25F69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE502937252FB64A00E25F69 /* MELMK */;
+			targetProxy = BE50294A252FB65000E25F69 /* PBXContainerItemProxy */;
+		};
+		BE502956252FB65000E25F69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE502937252FB64A00E25F69 /* MELMK */;
+			targetProxy = BE502955252FB65000E25F69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BE50295B252FB65000E25F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE50295C252FB65000E25F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE50295E252FB65000E25F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MELMK/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MELMK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeendsleap.MELMK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE50295F252FB65000E25F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MELMK/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MELMK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeendsleap.MELMK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE502961252FB65000E25F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MELMKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeendsleap.MELMKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MELMK.app/MELMK";
+			};
+			name = Debug;
+		};
+		BE502962252FB65000E25F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MELMKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeendsleap.MELMKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MELMK.app/MELMK";
+			};
+			name = Release;
+		};
+		BE502964252FB65000E25F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MELMKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeendsleap.MELMKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MELMK;
+			};
+			name = Debug;
+		};
+		BE502965252FB65000E25F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MELMKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeendsleap.MELMKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MELMK;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE502933252FB64A00E25F69 /* Build configuration list for PBXProject "MELMK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE50295B252FB65000E25F69 /* Debug */,
+				BE50295C252FB65000E25F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE50295D252FB65000E25F69 /* Build configuration list for PBXNativeTarget "MELMK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE50295E252FB65000E25F69 /* Debug */,
+				BE50295F252FB65000E25F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE502960252FB65000E25F69 /* Build configuration list for PBXNativeTarget "MELMKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE502961252FB65000E25F69 /* Debug */,
+				BE502962252FB65000E25F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE502963252FB65000E25F69 /* Build configuration list for PBXNativeTarget "MELMKUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE502964252FB65000E25F69 /* Debug */,
+				BE502965252FB65000E25F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE502930252FB64A00E25F69 /* Project object */;
+}
