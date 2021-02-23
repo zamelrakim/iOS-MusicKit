@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		BE502943252FB64F00E25F69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE502942252FB64F00E25F69 /* Preview Assets.xcassets */; };
 		BE50294E252FB65000E25F69 /* MELMKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50294D252FB65000E25F69 /* MELMKTests.swift */; };
 		BE502959252FB65000E25F69 /* MELMKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE502958252FB65000E25F69 /* MELMKUITests.swift */; };
+		BE82AFA725A39A2000DBB338 /* AMAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE82AFA625A39A2000DBB338 /* AMAPI.swift */; };
+		BE82AFAC25AC2C6600DBB338 /* MediaPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE82AFAB25AC2C6000DBB338 /* MediaPickerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		BE502954252FB65000E25F69 /* MELMKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MELMKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE502958252FB65000E25F69 /* MELMKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELMKUITests.swift; sourceTree = "<group>"; };
 		BE50295A252FB65000E25F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE82AFA625A39A2000DBB338 /* AMAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMAPI.swift; sourceTree = "<group>"; };
+		BE82AFAB25AC2C6000DBB338 /* MediaPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				BE50293B252FB64A00E25F69 /* MELMKApp.swift */,
 				BE50293D252FB64A00E25F69 /* ContentView.swift */,
+				BE82AFA625A39A2000DBB338 /* AMAPI.swift */,
+				BE82AFAB25AC2C6000DBB338 /* MediaPickerController.swift */,
 				BE50293F252FB64F00E25F69 /* Assets.xcassets */,
 				BE502944252FB64F00E25F69 /* Info.plist */,
 				BE502941252FB64F00E25F69 /* Preview Content */,
@@ -209,7 +215,7 @@
 				};
 			};
 			buildConfigurationList = BE502933252FB64A00E25F69 /* Build configuration list for PBXProject "MELMK" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE82AFAC25AC2C6600DBB338 /* MediaPickerController.swift in Sources */,
+				BE82AFA725A39A2000DBB338 /* AMAPI.swift in Sources */,
 				BE50293E252FB64A00E25F69 /* ContentView.swift in Sources */,
 				BE50293C252FB64A00E25F69 /* MELMKApp.swift in Sources */,
 			);
@@ -419,6 +427,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MELMK/Preview Content\"";
+				DEVELOPMENT_TEAM = S3622LX3TA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MELMK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -440,6 +449,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MELMK/Preview Content\"";
+				DEVELOPMENT_TEAM = S3622LX3TA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MELMK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
