@@ -19,7 +19,7 @@ struct ContentView: View {
                 Button(action: {self.isShowingMusic.toggle()}) {
                     Text("Select Music")
                 } .sheet(isPresented: $isShowingMusic){
-                    MediaPickerController(deleobj: amapi)
+                    MediaPickerController(delegateObj: amapi)
                 }
                 Spacer()
             }
