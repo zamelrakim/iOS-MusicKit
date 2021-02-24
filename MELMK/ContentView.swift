@@ -14,23 +14,35 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
-                let authStr = amapi.isAuthorized ? "Music Authorized" : "Music Is Not Authorized"
-                Text(authStr)
-                Button(action: {self.isShowingMusic.toggle()}) {
-                    Text("Select Music")
-                } .sheet(isPresented: $isShowingMusic){
-                    MediaPickerController(delegateObj: amapi)
+            VStack(alignment: .center) {
+                if amapi.isAuthorized {
+                    Button(action: {self.isShowingMusic.toggle()}) {
+                        Image(systemName: "plus.circle.fill")
+                            .resizable()
+                            .frame(width: 40.0, height: 40.0)
+                    } .sheet(isPresented: $isShowingMusic){
+                        MediaPickerController(delegateObj: amapi)
+                    }
+                } else {
+                    Image(systemName: "plus.circle.fill")
+                        .resizable()
+                        .foregroundColor(.gray)
+                        .frame(width: 40.0, height: 40.0)
                 }
                 if let item = amapi.nowPlayingItem {
                     Image(uiImage: (item.artwork?.image(at: CGSize(width: 80, height: 80)))!)
                     Text(item.title ?? "")
                     Text(item.albumArtist ?? "")
-                    HStack() {
+                    HStack(alignment: .center, spacing: 2.0) {
                         Image(systemName:"backward.fill")
+                            .font(.largeTitle)
                         Image(systemName:"play.fill")
+                            .font(.largeTitle)
+                            .padding(.horizontal, 50)
                         Image(systemName:"forward.fill")
+                            .font(.largeTitle)
                     }
+                    .padding()
                 }
                 Spacer()
             }
