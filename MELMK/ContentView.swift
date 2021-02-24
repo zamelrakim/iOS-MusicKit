@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MediaPlayer
 
 struct ContentView: View {
     @ObservedObject var amapi = AMAPI()
@@ -21,8 +22,15 @@ struct ContentView: View {
                 } .sheet(isPresented: $isShowingMusic){
                     MediaPickerController(delegateObj: amapi)
                 }
-                if let img = amapi.nowPlayingItem {
-                    Image(uiImage: (img.artwork?.image(at: CGSize(width: 100, height: 100)))!)
+                if let item = amapi.nowPlayingItem {
+                    Image(uiImage: (item.artwork?.image(at: CGSize(width: 80, height: 80)))!)
+                    Text(item.title ?? "")
+                    Text(item.albumArtist ?? "")
+                    HStack() {
+                        Image(systemName:"backward.fill")
+                        Image(systemName:"play.fill")
+                        Image(systemName:"forward.fill")
+                    }
                 }
                 Spacer()
             }
