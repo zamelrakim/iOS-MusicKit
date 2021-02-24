@@ -21,6 +21,9 @@ struct ContentView: View {
                 } .sheet(isPresented: $isShowingMusic){
                     MediaPickerController(delegateObj: amapi)
                 }
+                if let img = amapi.nowPlayingItem {
+                    Image(uiImage: (img.artwork?.image(at: CGSize(width: 100, height: 100)))!)
+                }
                 Spacer()
             }
         }
