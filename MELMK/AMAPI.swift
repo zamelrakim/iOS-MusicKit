@@ -6,15 +6,16 @@
 //
 
 import Foundation
-//import Combine
+import Combine
 import StoreKit
 import MediaPlayer
 
-class AMAPI: NSObject, ObservableObject, MPMediaPickerControllerDelegate {
+class AMAPI: NSObject, ObservableObject {
     var musicController = SKCloudServiceController()
     @Published var isAuthorized: Bool = false
-//    var player: MPMusicPlayerController?
     var player: MPMusicPlayerApplicationController?
+    @Published var nowPlayingItem: MPMediaItem?
+    private var cancellable: AnyCancellable?
     
     override init() {
         print("AMAPI Initialized.")
@@ -24,6 +25,12 @@ class AMAPI: NSObject, ObservableObject, MPMediaPickerControllerDelegate {
         self.skAuth()
         guard SKCloudServiceController.authorizationStatus() == .authorized else { return }
         self.playbackCapability()
+        
+        cancellable = NotificationCenter.default.publisher(for: .MPMusicPlayerControllerQueueDidChange)
+            .sink(receiveValue: { _ in
+                print("Notification Received!")
+                self.nowPlayingItem = self.player?.nowPlayingItem
+            })
     }
     
     func skAuth() {
@@ -45,19 +52,5 @@ class AMAPI: NSObject, ObservableObject, MPMediaPickerControllerDelegate {
                 self.player = MPMusicPlayerApplicationController.applicationQueuePlayer
             }
         })
-    }
-    
-    func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
-        print("Choose A Song(s)")
-        
-        player?.setQueue(with: mediaItemCollection)
-        mediaPicker.dismiss(animated: true)
-        player?.prepareToPlay()
-        player?.play()
-    }
-    
-    func mediaPickerDidCancel(_ mediaPicker: MPMediaPickerController) {
-        print("Canceled Media Picker")
-        mediaPicker.dismiss(animated: true)
     }
 }
