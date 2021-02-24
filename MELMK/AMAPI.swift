@@ -13,14 +13,13 @@ import MediaPlayer
 class AMAPI: NSObject, ObservableObject, MPMediaPickerControllerDelegate {
     var musicController = SKCloudServiceController()
     @Published var isAuthorized: Bool = false
-    var player: MPMusicPlayerController?
+//    var player: MPMusicPlayerController?
+    var player: MPMusicPlayerApplicationController?
     
     override init() {
         print("AMAPI Initialized.")
         
         super.init()
-        
-        
         
         self.skAuth()
         guard SKCloudServiceController.authorizationStatus() == .authorized else { return }
@@ -43,24 +42,22 @@ class AMAPI: NSObject, ObservableObject, MPMediaPickerControllerDelegate {
             if capabilities.contains(.musicCatalogPlayback) {
                 print("Apple Music Playback Capability Authorized.")
                 self.isAuthorized = true
-                self.createPlayer()
+                self.player = MPMusicPlayerApplicationController.applicationQueuePlayer
             }
         })
     }
     
-    func createPlayer() {
-        print("Creating Music Player...")
-        player = MPMusicPlayerApplicationController.applicationQueuePlayer
-//        THERE IS AN ERROR WHEN ADDING THE SONGS TO THE QUEUE
-        player?.setQueue(with: .songs())
-        player?.play()
-    }
-    
     func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
-        print("Choose A Song")
+        print("Choose A Song(s)")
+        
+        player?.setQueue(with: mediaItemCollection)
+        mediaPicker.dismiss(animated: true)
+        player?.prepareToPlay()
+        player?.play()
     }
     
     func mediaPickerDidCancel(_ mediaPicker: MPMediaPickerController) {
         print("Canceled Media Picker")
+        mediaPicker.dismiss(animated: true)
     }
 }

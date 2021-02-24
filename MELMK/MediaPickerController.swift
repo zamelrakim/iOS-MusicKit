@@ -13,11 +13,11 @@ import MediaPlayer
 struct MediaPickerController : UIViewControllerRepresentable {
     typealias UIViewControllerType = MPMediaPickerController
     
-//    static var shared: MediaPickerController!
     var delegateObj: AMAPI?
     
     func makeUIViewController(context: Context) -> MPMediaPickerController {
         let controller = MPMediaPickerController(mediaTypes: .music)
+        controller.allowsPickingMultipleItems = true
         controller.delegate = self.delegateObj
         return controller
     }
