@@ -44,6 +44,7 @@ struct MediaPickerController : UIViewControllerRepresentable {
             player?.setQueue(with: mediaItemCollection)
             mediaPicker.dismiss(animated: true)
             player?.prepareToPlay()
+            player?.beginGeneratingPlaybackNotifications()
             player?.play()
         }
         

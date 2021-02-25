@@ -34,13 +34,20 @@ struct ContentView: View {
                     Text(item.title ?? "")
                     Text(item.albumArtist ?? "")
                     HStack(alignment: .center, spacing: 2.0) {
-                        Image(systemName:"backward.fill")
-                            .font(.largeTitle)
-                        Image(systemName:"play.fill")
-                            .font(.largeTitle)
-                            .padding(.horizontal, 50)
-                        Image(systemName:"forward.fill")
-                            .font(.largeTitle)
+                        Button(action: amapi.startOrPrev) {
+                            Image(systemName: "backward.fill")
+                                .font(.largeTitle)
+                        }
+                        let imgSysName = (amapi.player!.playbackState.rawValue == 1) ? "pause.fill" : "play.fill"
+                        Button(action: amapi.playPause) {
+                            Image(systemName:imgSysName)
+                                .font(.largeTitle)
+                                .padding(.horizontal, 50)
+                        }
+                        Button(action: amapi.player!.skipToNextItem) {
+                            Image(systemName:"forward.fill")
+                                .font(.largeTitle)
+                        }
                     }
                     .padding()
                 }
