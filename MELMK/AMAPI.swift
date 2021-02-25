@@ -19,7 +19,6 @@ class AMAPI: NSObject, ObservableObject {
     @Published var nowPlayingItem: MPMediaItem?
     @Published var isPlaying: Bool?
     
-    
     override init() {
         print("AMAPI Initialized.")
         

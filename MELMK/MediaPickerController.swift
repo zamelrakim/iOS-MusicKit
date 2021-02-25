@@ -39,9 +39,20 @@ struct MediaPickerController : UIViewControllerRepresentable {
         }
         
         func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
-            print("Choose A Song(s)")
             
-            player?.setQueue(with: mediaItemCollection)
+            player?.perform(queueTransaction: { currQueue in
+                let itemsCount = currQueue.items.count
+                
+                if itemsCount == 0 {
+                    self.player?.setQueue(with: mediaItemCollection)
+                } else {
+                    let queueDescriptor = MPMusicPlayerMediaItemQueueDescriptor(itemCollection: mediaItemCollection)
+                    currQueue.insert(queueDescriptor, after: currQueue.items.last)
+                }
+            }, completionHandler: {(updatedQueue, err) in
+                if (err != nil) { print(err!) }
+            })
+            
             mediaPicker.dismiss(animated: true)
             player?.prepareToPlay()
             player?.beginGeneratingPlaybackNotifications()
@@ -49,7 +60,6 @@ struct MediaPickerController : UIViewControllerRepresentable {
         }
         
         func mediaPickerDidCancel(_ mediaPicker: MPMediaPickerController) {
-            print("Canceled Media Picker")
             mediaPicker.dismiss(animated: true)
         }
     }
