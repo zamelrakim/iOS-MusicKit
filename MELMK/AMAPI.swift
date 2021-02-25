@@ -12,10 +12,13 @@ import MediaPlayer
 
 class AMAPI: NSObject, ObservableObject {
     var musicController = SKCloudServiceController()
-    @Published var isAuthorized: Bool = false
     var player: MPMusicPlayerApplicationController?
+    private var cancellables = [AnyCancellable]()
+    
+    @Published var isAuthorized: Bool = false
     @Published var nowPlayingItem: MPMediaItem?
-    private var cancellable: AnyCancellable?
+    @Published var isPlaying: Bool?
+    
     
     override init() {
         print("AMAPI Initialized.")
@@ -26,11 +29,26 @@ class AMAPI: NSObject, ObservableObject {
         guard SKCloudServiceController.authorizationStatus() == .authorized else { return }
         self.playbackCapability()
         
-        cancellable = NotificationCenter.default.publisher(for: .MPMusicPlayerControllerQueueDidChange)
-            .sink(receiveValue: { _ in
+        let nowPlayingCancellable = NotificationCenter.default.publisher(for: .MPMusicPlayerControllerNowPlayingItemDidChange)
+            .sink(receiveValue: { note in
                 print("Notification Received!")
-                self.nowPlayingItem = self.player?.nowPlayingItem
+                let playerController = note.object as! MPMusicPlayerApplicationController
+                self.nowPlayingItem = playerController.nowPlayingItem
             })
+        cancellables.append(nowPlayingCancellable)
+        
+        let playbackStateCancellable = NotificationCenter.default.publisher(for: .MPMusicPlayerControllerPlaybackStateDidChange)
+            .sink(receiveValue: { note in
+                print("Playback State Changed!")
+                let playerController = note.object as! MPMusicPlayerApplicationController
+                switch playerController.playbackState {
+                case .playing:
+                    self.isPlaying = true
+                default:
+                    self.isPlaying = false
+                }
+            })
+        cancellables.append(playbackStateCancellable)
     }
     
     func skAuth() {
@@ -52,5 +70,26 @@ class AMAPI: NSObject, ObservableObject {
                 self.player = MPMusicPlayerApplicationController.applicationQueuePlayer
             }
         })
+    }
+    
+    func playPause() {
+        switch player?.playbackState {
+        case .paused:
+            player?.play()
+        case .playing:
+            player?.pause()
+        default:
+            break
+        }
+    }
+    
+    func startOrPrev() {
+        guard let currTime = player?.currentPlaybackTime else { return }
+        print("Current Time: \(currTime)")
+        if currTime < 2.0 {
+            player?.skipToPreviousItem()
+        } else {
+            player?.skipToBeginning()
+        }
     }
 }
