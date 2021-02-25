@@ -38,7 +38,7 @@ struct ContentView: View {
                             Image(systemName: "backward.fill")
                                 .font(.largeTitle)
                         }
-                        let imgSysName = (amapi.player!.playbackState.rawValue == 1) ? "pause.fill" : "play.fill"
+                        let imgSysName = (amapi.isPlaying ?? false) ? "pause.fill" : "play.fill"
                         Button(action: amapi.playPause) {
                             Image(systemName:imgSysName)
                                 .font(.largeTitle)
