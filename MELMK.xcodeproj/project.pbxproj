@@ -15,6 +15,9 @@
 		BE502959252FB65000E25F69 /* MELMKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE502958252FB65000E25F69 /* MELMKUITests.swift */; };
 		BE82AFA725A39A2000DBB338 /* AMAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE82AFA625A39A2000DBB338 /* AMAPI.swift */; };
 		BE82AFAC25AC2C6600DBB338 /* MediaPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE82AFAB25AC2C6000DBB338 /* MediaPickerController.swift */; };
+		BEF2577A25E8A46700980446 /* AddToQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2577925E8A46700980446 /* AddToQueue.swift */; };
+		BEF2577F25E8AA8600980446 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2577E25E8AA8600980446 /* Player.swift */; };
+		BEF2578425E8ACA700980446 /* PlayerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2578325E8ACA700980446 /* PlayerControls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		BE50295A252FB65000E25F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE82AFA625A39A2000DBB338 /* AMAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMAPI.swift; sourceTree = "<group>"; };
 		BE82AFAB25AC2C6000DBB338 /* MediaPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerController.swift; sourceTree = "<group>"; };
+		BEF2577925E8A46700980446 /* AddToQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToQueue.swift; sourceTree = "<group>"; };
+		BEF2577E25E8AA8600980446 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		BEF2578325E8ACA700980446 /* PlayerControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 				BE50293D252FB64A00E25F69 /* ContentView.swift */,
 				BE82AFA625A39A2000DBB338 /* AMAPI.swift */,
 				BE82AFAB25AC2C6000DBB338 /* MediaPickerController.swift */,
+				BEF2577825E8A3F600980446 /* Views */,
 				BE50293F252FB64F00E25F69 /* Assets.xcassets */,
 				BE502944252FB64F00E25F69 /* Info.plist */,
 				BE502941252FB64F00E25F69 /* Preview Content */,
@@ -134,6 +141,16 @@
 				BE50295A252FB65000E25F69 /* Info.plist */,
 			);
 			path = MELMKUITests;
+			sourceTree = "<group>";
+		};
+		BEF2577825E8A3F600980446 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEF2577925E8A46700980446 /* AddToQueue.swift */,
+				BEF2577E25E8AA8600980446 /* Player.swift */,
+				BEF2578325E8ACA700980446 /* PlayerControls.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,10 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF2577A25E8A46700980446 /* AddToQueue.swift in Sources */,
 				BE82AFAC25AC2C6600DBB338 /* MediaPickerController.swift in Sources */,
 				BE82AFA725A39A2000DBB338 /* AMAPI.swift in Sources */,
 				BE50293E252FB64A00E25F69 /* ContentView.swift in Sources */,
+				BEF2577F25E8AA8600980446 /* Player.swift in Sources */,
 				BE50293C252FB64A00E25F69 /* MELMKApp.swift in Sources */,
+				BEF2578425E8ACA700980446 /* PlayerControls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
