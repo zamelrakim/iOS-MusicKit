@@ -31,11 +31,13 @@ struct MediaPickerController : UIViewControllerRepresentable {
     
     class Coordinator: NSObject, MPMediaPickerControllerDelegate {
         var parent: MediaPickerController
+        var amapi: AMAPI
         var player: MPMusicPlayerApplicationController?
         
         init(_ mediaPickerController: MediaPickerController) {
             parent = mediaPickerController
-            player = parent.delegateObj?.player
+            amapi = parent.delegateObj!
+            player = amapi.player
         }
         
         func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
@@ -51,6 +53,7 @@ struct MediaPickerController : UIViewControllerRepresentable {
                 }
             }, completionHandler: {(updatedQueue, err) in
                 if (err != nil) { print(err!) }
+                self.amapi.queue = updatedQueue.items
             })
             
             mediaPicker.dismiss(animated: true)

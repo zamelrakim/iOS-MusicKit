@@ -18,6 +18,7 @@ class AMAPI: NSObject, ObservableObject {
     @Published var isAuthorized: Bool = false
     @Published var nowPlayingItem: MPMediaItem?
     @Published var isPlaying: Bool?
+    @Published var queue: [MPMediaItem]?
     
     override init() {
         print("AMAPI Initialized.")
