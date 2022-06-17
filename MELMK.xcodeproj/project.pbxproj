@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE3CB08125EC11BF00098456 /* ListQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3CB08025EC11BF00098456 /* ListQueue.swift */; };
 		BE50293C252FB64A00E25F69 /* MELMKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50293B252FB64A00E25F69 /* MELMKApp.swift */; };
 		BE50293E252FB64A00E25F69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50293D252FB64A00E25F69 /* ContentView.swift */; };
 		BE502940252FB64F00E25F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE50293F252FB64F00E25F69 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE3CB08025EC11BF00098456 /* ListQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListQueue.swift; sourceTree = "<group>"; };
 		BE502938252FB64A00E25F69 /* MELMK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MELMK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE50293B252FB64A00E25F69 /* MELMKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELMKApp.swift; sourceTree = "<group>"; };
 		BE50293D252FB64A00E25F69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				BEF2577925E8A46700980446 /* AddToQueue.swift */,
 				BEF2577E25E8AA8600980446 /* Player.swift */,
 				BEF2578325E8ACA700980446 /* PlayerControls.swift */,
+				BE3CB08025EC11BF00098456 /* ListQueue.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				BEF2577A25E8A46700980446 /* AddToQueue.swift in Sources */,
 				BE82AFAC25AC2C6600DBB338 /* MediaPickerController.swift in Sources */,
 				BE82AFA725A39A2000DBB338 /* AMAPI.swift in Sources */,
+				BE3CB08125EC11BF00098456 /* ListQueue.swift in Sources */,
 				BE50293E252FB64A00E25F69 /* ContentView.swift in Sources */,
 				BEF2577F25E8AA8600980446 /* Player.swift in Sources */,
 				BE50293C252FB64A00E25F69 /* MELMKApp.swift in Sources */,

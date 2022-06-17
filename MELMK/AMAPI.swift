@@ -92,4 +92,8 @@ class AMAPI: NSObject, ObservableObject {
             player?.skipToBeginning()
         }
     }
+    
+    func removeFromQueue(at offsets: IndexSet) {
+        print("Inside removeFromQueue function")
+    }
 }
